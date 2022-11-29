@@ -5,6 +5,8 @@
   background-image: url("../assets/bg-hero.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  width: 100%;
+  background-size: cover;
   .container {
     display: flex;
     align-items: flex-end;
