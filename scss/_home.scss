@@ -74,6 +74,45 @@
           left: 3.2rem;
         }
       }
+      .year-old {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        img {
+          width: 4.6rem;
+          height: 4.6rem;
+        }
+        p {
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 1.7rem;
+          color: white;
+        }
+      }
     }
 
+}
+
+.info-geral {
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  background-color: #090A0A;
+  ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    li {
+      gap: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 160%;
+      }
+    }
+  }
 }
