@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   width: 100%;
-  background-size: cover;
+  background-size: cover;  
   .container {
     display: flex;
     align-items: flex-end;
@@ -46,6 +46,7 @@
         line-height: 2.2rem;
     }
   }
+
 }
 
     .right-info {
@@ -93,6 +94,117 @@
       }
     }
 
+    
+  @media (max-width: 1200px) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: auto;
+    background-position-x: 30%;
+    .left-info {
+      max-width: 64rem;
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .right-info {
+      top: 0;
+      max-width: 33.5rem;
+      button {
+        height: 16.7rem;
+      }
+      .year-old img {
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    height: 100vh;
+    padding: 6rem 0;
+    background-position-x: 50%;
+    background-size: cover;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .left-info {
+        text-align: center;
+        margin-bottom: 4rem;
+        .value {
+          justify-content: center;
+        }
+      }
+      .right-info {
+        text-align: center;
+        button {
+          margin-bottom: 3rem;
+        }
+        .year-old {
+          flex-direction: column;
+          p {
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }    
+  }
+
+  @media (max-width: 560px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-position-x: 50%;
+    background-size: cover;
+    height: 100vh;
+    
+    .container {   
+      .left-info{
+        h1 {
+          margin-top: 1.5rem;
+        }
+        margin-bottom: 2rem;
+        p{
+          font-size: 13px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+        }
+        span {
+          margin-bottom: 1rem;
+        }
+        .value {
+          text-align: center;
+          justify-content: center;
+          margin: 0 auto;
+          flex-direction: column;
+          max-width: 300px;
+
+          strong {
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            padding: 1rem 1.6rem;
+          }
+          a {
+            font-size: 1.5rem;            
+            line-height: 1.2rem; 
+          }
+        }
+      }
+      .right-info {
+        max-width: 30rem;
+        button {
+          height: 15.7rem;
+        }
+        .year-old {
+          gap: 0;
+          p {
+            margin-top: 1rem;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .info-geral {
@@ -101,6 +213,7 @@
   display: flex;
   align-items: center;
   background-color: #090A0A;
+  display: none;
   ul {
     display: flex;
     align-items: flex-start;
@@ -129,6 +242,7 @@
   background-position: top center;
   background-size: cover;
   overflow: hidden;
+  display: none;
   .container {
     display: flex;
     align-items: center;
@@ -174,8 +288,8 @@
   background-image: url("../assets/bg-characters.png");
   background-repeat: no-repeat;
   background-position: center center;
-  // background-size: contain;
   overflow: hidden;
+  display: none;
   .description {
     display: flex;
     justify-content: flex-start;

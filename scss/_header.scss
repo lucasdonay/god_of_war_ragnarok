@@ -8,6 +8,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .sony {
+      width: 3.6rem;
+      height: 2.8rem;
+    }
+    .logo {
+      width: 16.9rem;
+      height: 4.4rem;
+   }
   }
   .platform {
     display: flex;
@@ -30,12 +38,70 @@ header {
       }
     }    
   }
-  img:nth-child(1) {
-    width: 3.6rem;
-    height: 2.8rem;
-  }
-  img:nth-child(2) {
-    width: 20.9rem;
-    height: 5.4rem;
-  }
+
+  @media (max-width: 560px) {    
+      header {
+        height: 7rem;
+      }
+      .container {        
+        .sony {
+          display: none;
+        }
+        .logo {
+          padding-left: 2rem;
+          width: 13.9rem;
+          height: 4.4rem;
+        }
+        .platform {
+          padding-right: 2rem;
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+    @media (max-width: 1600px) {    
+     
+        // height: 7rem;
+      
+      .container {      
+        .logo {
+          margin-left: 25rem;         
+        }
+      }
+    }
+    
+    @media (max-width: 991px) {    
+      header {
+        height: 7rem;
+      }
+      .container {      
+        .logo {
+          margin-left: 21rem;         
+        }
+      }
+    }
+
+    @media (max-width: 739px) {    
+      header {
+        height: 7rem;
+      }
+      .container {      
+        .logo {
+          margin-left: 11rem;         
+        }
+      }
+    }
+
+    @media (max-width: 650px) {    
+      header {
+        height: 7rem;
+      }
+      .container {      
+        .logo {
+          margin-left: 1rem;         
+        }
+      }
+    }
+
 }
