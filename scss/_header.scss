@@ -39,27 +39,7 @@ header {
     }    
   }
 
-  @media (max-width: 560px) {    
-      header {
-        height: 7rem;
-      }
-      .container {        
-        .sony {
-          display: none;
-        }
-        .logo {
-          padding-left: 2rem;
-          width: 13.9rem;
-          height: 4.4rem;
-        }
-        .platform {
-          padding-right: 2rem;
-          span {
-            display: none;
-          }
-        }
-      }
-    }
+
     @media (max-width: 1600px) {    
      
         // height: 7rem;
@@ -80,7 +60,6 @@ header {
           margin-left: 21rem;         
         }
       }
-    }
 
     @media (max-width: 739px) {    
       header {
@@ -92,6 +71,9 @@ header {
         }
       }
     }
+    
+    }
+
 
     @media (max-width: 650px) {    
       header {
@@ -100,6 +82,28 @@ header {
       .container {      
         .logo {
           margin-left: 1rem;         
+        }
+      }
+    }
+
+    @media (max-width: 560px) {    
+      header {
+        height: 7rem;
+      }
+      .container {        
+        .sony {
+          display: none;
+        }
+        .logo {
+          padding-left: 2rem;
+          width: 13.9rem;
+          height: 4.4rem;
+        }
+        .platform {
+          padding-right: 2rem;
+          span {
+            display: none;
+          }
         }
       }
     }

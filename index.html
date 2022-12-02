@@ -9,6 +9,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>God of War</title>
+  <link rel="shortcut icon" href="fav.png
+  " type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/main.min.css">
 </head>
@@ -17,9 +20,9 @@
 
   <header>
     <div class="container">
-      <img src="/assets/sony.svg" class="sony" alt="Logo da Sony">
+      <img src="/assets/sony.svg" class="sony" data-aos="fade-right" alt="Logo da Sony">
       <img src="/assets/logo2.png" class="logo" alt="Logo God of War">
-      <div class="platform">
+      <div class="platform" data-aos="fade-left">
         <span>Disponivel para</span>
         <ul>
           <li>PS4</li>
@@ -32,7 +35,7 @@
 
   <section class="s-hero">
     <div class="container">
-      <div class="left-info">
+      <div class="left-info" data-aos="fade-down">
         <h3 class="subtitle">
           <img src="./assets/bullets.svg" alt="">
           <span>Lançamento dia 09/11/2022 </span>
@@ -48,7 +51,7 @@
 
       </div>
 
-      <div class="right-info">
+      <div class="right-info" data-aos="fade-left">
         <span>Assista aos trailers</span>
         <button>
           <img src="./assets/thumbnail.gif" class="thumbnail" alt="Thumbnail trailer">
@@ -62,8 +65,8 @@
     </div>
   </section>
 
-  <section class="info-geral">
-    <div class="container">
+  <section class="info-geral" data-aos="fade-up">
+    <div class=" container">
       <ul>
         <li>
           <img src="./assets/icon-game-offline.png" alt="Icon game offline">
@@ -95,7 +98,7 @@
 
   <section class="s-story">
     <div class="container">
-      <div class="story-left">
+      <div class="story-left" data-aos="fade-right">
         <h3 class="subtitle">
           <img src="./assets/bullets.svg" alt="Icon Bullets">
           <span>Sony Interactive Entertainment</span>
@@ -113,7 +116,7 @@
         </div>
       </div>
 
-      <div class="story-right">
+      <div class="story-right" data-aos="fade-left">
         <img src="/assets/kratos-atreus.png" class="kratos-ateus" alt="">
       </div>
 
@@ -123,7 +126,7 @@
   <section class="s-characteres">
     <div class="container">
       <div class="description">
-        <div class="left-personagens">
+        <div class="left-personagens" data-aos="zoom-in-right">
           <h3 class="subtitle">
             <img src="./assets/bullets.svg" alt="">
             <span>Conheça os personsagens</span>
@@ -136,21 +139,19 @@
           </p>
         </div>
         <div class="right-characteres">
-          <div class="axel">
+          <div class="axel" data-aos="fade-down-left">
             <img src="./assets/axel.png" alt="Imagem do Machado Axel">
           </div>
           <div class="logo">
             <img src="./assets/logo2.png" class="logo2" alt="Logo God of War">
-            <span>
+            <span class="finish">
               Lançamento dia 09/11/2022
             </span>
           </div>
         </div>
       </div>
 
-
-
-      <div class="slide-characteres">
+      <div class="slide-characteres" data-aos="fade-up">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card-character">
@@ -241,9 +242,14 @@
       </div>
 
     </div>
+    <div class="copy">
+      <span>Feito por <a href="http://instagram.com/donays"><strong>@donays</strong></a></span>
     </div>
+    </div>
+
   </section>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

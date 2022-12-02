@@ -92,7 +92,10 @@
       }
     }
 
-    
+  @media (max-width: 2000px) {
+    height: 94rem;
+  }  
+
   @media (max-width: 1200px) {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -299,8 +302,8 @@
   .story-right {
     .kratos-ateus {
       position: relative;
-      left: 77px;
-      top: 4px;
+      top: -45px;
+      left: 90px;
     }
   }
 
@@ -381,8 +384,8 @@
 
 .s-characteres {
   width: 100%;
-  padding-top: 12.6rem;
-  padding-bottom: 17.3rem;
+  padding-top: 8.6rem;
+  padding-bottom: 7.3rem;
   background-image: url("../assets/bg-characters.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -413,6 +416,7 @@
           margin-bottom: 2.2rem;
         }
 
+
         span {
          font-style: normal;
          font-weight: 500;
@@ -423,11 +427,14 @@
   }
 
   .slide-characteres {
-    display: none;
+    margin-top: 4rem;
   }
 
   @media (max-width: 1200px) {
-    padding: 6rem 0;
+    padding: 7rem 0;
+    .description {
+      margin-bottom: 5rem;
+    }
   }
 
   @media (max-width: 991px) {
@@ -435,6 +442,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-bottom: 2rem;
       .left-personagens {
         max-width: 100%;
         text-align: center;
@@ -443,22 +451,58 @@
         align-items: center;
         gap: 2rem;
         margin: 0 auto;
+        
+        .axel {
+          margin-top: 5rem;
+        }
       }
     }
   }
 
   @media (max-width: 560px) {
-    padding: 4rem 0;
+    padding: 7rem 0;
+    .description {
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+   
+
     .right-characteres {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     .axel {
-      margin-top: 2rem;
+      margin-top: 5rem;
     }
     .logo {
-      margin-top: -14rem;
+       margin: -14rem auto 0;
+       text-align: center;
+      .finish {
+        font-size: 1.4rem;
+       
+      }
     }
+    }
+  }
+ }
+
+ @media (max-width: 1200px) {
+    padding: 6rem 0;
+ }
+}
+
+.copy {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10rem;
+  // margin-bottom: -11rem;
+  span {
+    font-size: 2rem;
+    strong {
+      color: #3265EA;
     }
   }
 }
